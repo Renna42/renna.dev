@@ -1,5 +1,5 @@
 ---
-import { LOCALE, SITE } from "@config";
+import { LOCALE, SITE, GRAY_MODE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
 import { SEO } from "astro-seo";
@@ -42,11 +42,11 @@ const socialImageURL = new URL(
 <html
   lang=`${LOCALE.lang ?? "en"}`
   class={`${scrollSmooth && "scroll-smooth"}`}
+  style={`${GRAY_MODE && "filter: grayscale(1)"}`}
 >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
 
     <SEO

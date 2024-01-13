@@ -72,3 +72,5 @@ export const FRIENDS: FriendObjects = [
     active: true,
   },
 ];
+
+export const GRAY_MODE: boolean = false;
