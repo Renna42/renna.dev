@@ -18,7 +18,7 @@ import Socials from "@components/Socials.astro";
         {
           FRIENDS.filter(friend => friend.active).map(friend => (
           <div class="relative px-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 w-full sm:py-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-            <img class="block mx-auto h-28 rounded-lg !mt-6 mb-3 sm:mx-0 sm:shrink-0" src={friend.iconUrl} alt={friend.name} />
+            <img class="block mx-auto h-28 rounded-lg !mt-6 mb-3 sm:mx-0 sm:shrink-0" src={new URL("/assets/friends/" + friend.icon_file, Astro.url.origin).href} alt={friend.name} />
             <div class="text-center space-y-2 sm:text-left">
               <div class="absolute top-8 space-y-0.5">
                 <a href={friend.link} target="_blank" class="!text-skin-accent no-underline hover:underline text-lg font-bold my-0">

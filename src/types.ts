@@ -20,7 +20,7 @@ export type SocialObjects = {
 export type FriendObjects = {
   name: string;
   description: string;
-  iconUrl: string;
+  icon_file: string;
   socials: SocialObjects;
   link: string;
   active: boolean;

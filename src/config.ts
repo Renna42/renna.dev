@@ -47,7 +47,7 @@ export const FRIENDS: FriendObjects = [
   {
     name: "阿龙的笔记",
     description: "阿巴阿巴…",
-    iconUrl: "/assets/friends/alongw.png",
+    icon_file: "alongw.jpg",
     socials: [
       {
         name: "Github",
@@ -69,6 +69,21 @@ export const FRIENDS: FriendObjects = [
       },
     ],
     link: "https://www.alongw.cn/",
+    active: true,
+  },
+  {
+    name: "陌漓的小窝",
+    description: "一只可爱的小陌漓~",
+    icon_file: "molly.jpg",
+    socials: [
+      {
+        name: "Twitter",
+        href: "",
+        linkTitle: "Twitter",
+        active: true,
+      },
+    ],
+    link: "https://cwcu.com.cn",
     active: true,
   },
 ];
