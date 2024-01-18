@@ -47,9 +47,6 @@ export default defineConfig({
       exclude: ["@resvg/resvg-js"],
     },
   },
-  experimental: {
-    contentCollectionCache: true,
-  },
   scopedStyleStrategy: "where",
   adapter: vercel({
     imageService: true,
