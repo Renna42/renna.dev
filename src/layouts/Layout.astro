@@ -5,6 +5,8 @@ import { ViewTransitions } from "astro:transitions";
 import { SEO } from "astro-seo";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const googleAnalyticsCode = import.meta.env.GOOGLE_ANALYTICS_CODE;
+const cloudflareAnalyticsToken = import.meta.env.CLOUDFLARE_ANALYTICS_TOKEN;
 
 export interface Props {
   title?: string;
@@ -104,18 +106,21 @@ const socialImageURL = new URL(
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53YE76JBT2"
-    ></script>
-    <script lang="javascript">
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    {
+      googleAnalyticsCode && (
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id="{googleAnalyticsCode}></script>
+        <script lang="javascript">
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
 
-      gtag("config", "G-53YE76JBT2");
-    </script>
+          gtag("config", {googleAnalyticsCode});
+        </script>
+      )
+    }
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -149,11 +154,16 @@ const socialImageURL = new URL(
   </head>
   <body>
     <slot />
-    <!-- Cloudflare Web Analytics -->
-    <script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"token": "9f927902e0c8496aa31d496112bd7c3c"}'></script>
-    <!-- End Cloudflare Web Analytics -->
+    {
+      cloudflareAnalyticsToken && (
+        <!-- Cloudflare Web Analytics -->
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={'{"token": "' + cloudflareAnalyticsToken + '"}'}></script>
+        <!-- End Cloudflare Web Analytics -->
+      )
+    }
+    
   </body>
 </html>
