@@ -7,7 +7,7 @@ tags:
   - openpgp
   - dns
   - 整活
-description: 使用 DNS 来传播自己的 PGP 证书指纹
+description: 使用 DNS 来传播自己的 PGP 证书
 license: CC BY-SA 4.0
 ---
 
