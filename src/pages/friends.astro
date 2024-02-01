@@ -23,10 +23,10 @@ import FriendCard from "@components/FriendCard.astro";
       </div>
       <p>欢迎交换友链喵~</p>
       <p>
-        站名: Code & Tea<br />
+        站名: <b>Code & Tea</b><br />
         介绍: Neko’s bug log<br />
-        链接: {SITE.website}<br />
-        图标: {new URL("avatar.png", SITE.website).href}<br />
+        链接: <a href={SITE.website}>{SITE.website}</a><br />
+        图标: <a href={new URL("avatar.png", SITE.website).href}>{new URL("avatar.png", SITE.website).href}</a><br />
       </p>
       <p>
         如果你想在此添加友链, 你可以通过任意社交方式或在下方评论区告诉我<br />
