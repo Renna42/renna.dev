@@ -13,7 +13,6 @@ const blog = defineCollection({
       tags: z.array(z.string()).default(["others"]),
       description: z.string(),
       canonicalURL: z.string().optional(),
-      comment: z.boolean().default(true),
       license: z.string().default("ARR"),
     }),
 });

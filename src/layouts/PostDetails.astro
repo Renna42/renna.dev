@@ -7,7 +7,6 @@ import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
-import Comments from "@components/Comments.astro";
 import Hr from "@components/Hr.astro";
 
 const currentYear = new Date().getFullYear();
@@ -26,7 +25,6 @@ const {
   pubDatetime,
   modDatetime,
   tags,
-  comment,
   license,
 } = post.data;
 
@@ -77,8 +75,6 @@ const layoutProps = {
     <div class="text-center">
       <span class="text-sm">&copy; {currentYear} {license != "ARR" ? "本文采用 " + license + " 许可证进行许可" : "保留所有权利" }</span>
     </div>
-
-    {comment && <Comments />}
   </main>
   <Footer />
 </Layout>
