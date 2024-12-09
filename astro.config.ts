@@ -7,7 +7,6 @@ import rehypeExternalLinks from "rehype-external-links";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 import compress from "astro-compress";
-import vercel from "@astrojs/vercel/static";
 import mdx from "@astrojs/mdx";
 
 import preact from "@astrojs/preact";
@@ -66,7 +65,4 @@ export default defineConfig({
     },
   },
   scopedStyleStrategy: "where",
-  adapter: vercel({
-    imageService: true,
-  }),
 });
