@@ -6,7 +6,6 @@ import remarkEmoji from "remark-emoji";
 import rehypeExternalLinks from "rehype-external-links";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
-import compress from "astro-compress";
 import mdx from "@astrojs/mdx";
 
 import preact from "@astrojs/preact";
@@ -19,13 +18,6 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     sitemap(),
-    compress({
-      HTML: {
-        "html-minifier-terser": {
-          collapseWhitespace: false,
-        },
-      },
-    }),
     mdx(),
     preact(),
   ],
@@ -57,11 +49,6 @@ export default defineConfig({
     shikiConfig: {
       theme: "one-dark-pro",
       wrap: true,
-    },
-  },
-  vite: {
-    optimizeDeps: {
-      exclude: ["@resvg/resvg-js"],
     },
   },
   scopedStyleStrategy: "where",
