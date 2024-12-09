@@ -12,7 +12,6 @@ export interface Props {
   title?: string;
   author?: string;
   description?: string;
-  ogImage?: string;
   canonicalURL?: string;
   pubDatetime?: Date;
   modDatetime?: Date | null;
@@ -25,7 +24,6 @@ const {
   title = SITE.title,
   author = SITE.author,
   description = SITE.desc,
-  ogImage = SITE.ogImage,
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
   pubDatetime,
   modDatetime,
@@ -33,11 +31,6 @@ const {
   isPost = false,
   postTags = [],
 } = Astro.props;
-
-const socialImageURL = new URL(
-  ogImage ?? SITE.ogImage ?? "og.png",
-  Astro.url.origin
-).href;
 ---
 
 <!doctype html>
@@ -51,38 +44,16 @@ const socialImageURL = new URL(
       title={title}
       description={description}
       canonical={canonicalURL}
-      openGraph={{
-        basic: {
-          title: title,
-          type: isPost ? "article" : "website",
-          image: socialImageURL,
-          url: canonicalURL,
-        },
-        optional: {
-          description: description,
-          locale: "zh_CN",
-          siteName: title,
-        },
-        article: isPost
-          ? {
-              publishedTime: pubDatetime && pubDatetime.toISOString(),
-              modifiedTime: modDatetime ? modDatetime.toISOString() : undefined,
-              authors: [author],
-              tags: postTags,
-            }
-          : undefined,
-      }}
-      ,
+      
       twitter={{
         card: "summary_large_image",
         site: "@HMur233",
         creator: "@HMur233",
         title: title,
-        image: socialImageURL,
         imageAlt: title,
         description: description,
       }}
-      ,
+      
       extend={{
         link: [
           {
@@ -105,22 +76,6 @@ const socialImageURL = new URL(
 
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-
-    {
-      googleAnalyticsCode && (
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id="{googleAnalyticsCode}></script>
-        <script lang="javascript">
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
-          gtag("js", new Date());
-
-          gtag("config", {googleAnalyticsCode});
-        </script>
-      )
-    }
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

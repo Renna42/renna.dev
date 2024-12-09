@@ -5,7 +5,6 @@ export const SITE: Site = {
   author: "Nek0U",
   desc: "一个奇怪的小屋",
   title: "Code & Tea",
-  ogImage: "og.jpg",
   lightAndDarkMode: true,
   postPerPage: 5,
 };

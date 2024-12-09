@@ -22,7 +22,6 @@ const {
   title,
   author,
   description,
-  ogImage,
   canonicalURL,
   pubDatetime,
   modDatetime,
@@ -33,19 +32,12 @@ const {
 
 const { Content } = await post.render();
 
-const ogImageUrl = typeof ogImage === "string" ? ogImage : ogImage?.src;
-const ogUrl = new URL(
-  ogImageUrl ?? `/posts/${slugifyStr(title)}.png`,
-  Astro.url.origin
-).href;
-
 const layoutProps = {
   author,
   description,
   pubDatetime,
   modDatetime,
   canonicalURL,
-  ogImage: ogUrl,
   scrollSmooth: true,
   isPost: true,
   postTags: tags,
