@@ -2,8 +2,8 @@
   <section class="giscus mx-auto mt-10 w-full"></section>
 </div>
 
-<script is:inline lang="javascript">
-  document.addEventListener('astro:page-load', () => {
+<script is:inline data-astro-rerun lang="javascript">
+  (function () {
     const element = document.createElement("script");
     const config = {
       src: "https://giscus.app/client.js",
@@ -27,5 +27,5 @@
       element.setAttribute(key, config[key]);
     }
     document.getElementById("giscus-wrap")?.appendChild(element);
-  });
+  })();
 </script>
