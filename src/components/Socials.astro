@@ -1,7 +1,6 @@
 ---
 import { SOCIALS } from "@config";
 import LinkButton from "./LinkButton.astro";
-import socialIcons from "@assets/socialIcons";
 import type { SocialObject } from "types";
 
 export interface Props {
@@ -12,7 +11,7 @@ export interface Props {
 const { centered = false, socials = SOCIALS } = Astro.props;
 ---
 
-<div class={`social-icons ${centered ? "flex" : ""}`}>
+<div class={`text-2xl social-icons ${centered ? "flex" : ""}`}>
   {
     socials
       .filter(social => social.active == undefined || social.active)
@@ -22,7 +21,7 @@ const { centered = false, socials = SOCIALS } = Astro.props;
           className="link-button"
           title={social.linkTitle}
         >
-          <Fragment set:html={socialIcons[social.name]} />
+          <i class={social.icon}></i>
           <span class="sr-only">{social.linkTitle}</span>
         </LinkButton>
       ))

@@ -51,11 +51,8 @@ const layoutProps = {
       class="focus-outline mb-2 mt-8 flex hover:opacity-75"
       onclick="history.back()"
     >
-      <svg xmlns="http://www.w3.org/2000/svg"
-        ><path
-          d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
-        ></path>
-      </svg><span>Go back</span>
+    <i class="fa-solid fa-angle-left"></i>
+    <span class="relative bottom-1 left-1">Go back</span>
     </button>
   </div>
   <main id="main-content">
@@ -78,7 +75,7 @@ const layoutProps = {
     <br>
 
     <div class="text-center">
-      <span class="text-sm">© {currentYear} {license != "ARR" ? "本文采用 " + license + " 许可证进行许可" : "保留所有权利" }</span>
+      <span class="text-sm">&copy; {currentYear} {license != "ARR" ? "本文采用 " + license + " 许可证进行许可" : "保留所有权利" }</span>
     </div>
 
     {comment && <Comments />}
