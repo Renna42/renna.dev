@@ -70,10 +70,17 @@ const layoutProps = {
     </ul>
 
     <Hr />
-    <br>
+    <br />
 
     <div class="text-center">
-      <span class="text-sm">&copy; {currentYear} {license != "ARR" ? "本文采用 " + license + " 许可证进行许可" : "保留所有权利" }</span>
+      <span class="text-sm"
+        >&copy; {currentYear}
+        {
+          license != "ARR"
+            ? "本文采用 " + license + " 许可证进行许可"
+            : "保留所有权利"
+        }</span
+      >
     </div>
   </main>
   <Footer />

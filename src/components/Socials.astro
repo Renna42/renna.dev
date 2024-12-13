@@ -21,7 +21,7 @@ const { centered = false, socials = SOCIALS } = Astro.props;
           className="link-button"
           title={social.linkTitle}
         >
-          <i class={social.icon}></i>
+          <i class={social.icon} />
           <span class="sr-only">{social.linkTitle}</span>
         </LinkButton>
       ))

@@ -17,7 +17,9 @@ const { tag, size = "sm" } = Astro.props;
     transition:name={tag}
     class={`${size === "sm" ? "text-sm" : "text-lg"} pr-2 group`}
   >
-    <i class={`${size === "sm" ? " scale-75" : "scale-110"} fa-solid fa-tag relative left-1`}></i>
+    <i
+      class={`${size === "sm" ? " scale-75" : "scale-110"} fa-solid fa-tag relative left-1`}
+    ></i>
     &nbsp;<span>{tag}</span>
   </a>
 </li>
