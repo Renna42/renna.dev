@@ -20,12 +20,17 @@ if (typeof friend == "string") {
 <div
   class="friend-card-bg-color relative mx-auto flex w-full max-w-sm space-y-2 rounded-xl px-6 shadow-md sm:items-center sm:space-x-6 sm:space-y-0 sm:py-2"
 >
-  <img
-    class="!mt-6 mb-3 ml-0 mr-6 block h-28 rounded-lg sm:mx-0 sm:shrink-0"
-    src={new URL("/assets/friends/" + friendObject.icon_file, Astro.url.origin)
-      .href}
-    alt={friendObject.name}
-  />
+  <a
+    href={friendObject.link}
+    target="_blank"
+  >
+    <img
+      class="!mt-6 mb-3 ml-0 mr-6 block h-28 rounded-lg sm:mx-0 sm:shrink-0"
+      src={new URL("/assets/friends/" + friendObject.icon_file, Astro.url.origin)
+        .href}
+      alt={friendObject.name}
+    />
+  </a>
   <div class="space-y-2 text-left">
     <div class="absolute top-8 mr-4 space-y-0.5">
       <a
