@@ -19,7 +19,7 @@ Hi:wave:, 这里是 **泉野咲**
 
 希望可以多多社交~
 
-OpenPGP 证书签名:
+OpenPGP 公钥:
 
 ```text
 7E33 7F70 6F89 4D13 D8E6  B718 9676 3FAE 10AC 74FC
