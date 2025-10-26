@@ -3,7 +3,6 @@ import type { Site, SocialObject, FriendObject } from "./types";
 export const SITE: Site = {
   website: "https://renna.dev/", // replace this with your deployed domain
   author: "Renna",
-  desc: "梦想成为赛博魔法少女",
   title: "Renna's Blog",
   lightAndDarkMode: true,
   postPerPage: 5,
