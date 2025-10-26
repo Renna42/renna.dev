@@ -4,7 +4,6 @@ import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
-import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
 import getSortedPosts from "@utils/getSortedPosts";
 
@@ -16,25 +15,6 @@ const sortedPosts = getSortedPosts(posts);
 <Layout>
   <Header />
   <main id="main-content">
-    <section id="hero">
-      <h1 class="font-serif">Izumino's Blog</h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS 订阅"
-      >
-        <i class="fa-solid fa-rss rss-icon relative left-1 text-skin-accent"
-        ></i>
-        <span class="sr-only">RSS 订阅</span>
-      </a>
-
-      <p class="relative bottom-2 text-xl">这里是泉野</p>
-    </section>
-
-    <Hr />
-
     <section id="recent-posts">
       <h2>最新文章</h2>
       <ul>

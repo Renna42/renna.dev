@@ -76,6 +76,17 @@ const { activeNav } = Astro.props;
             </LinkButton>
           </li>
           <li>
+            <LinkButton
+              href="/rss.xml"
+              className={`focus-outline p-3 sm:p-1 flex`}
+              ariaLabel="rss"
+              title="RSS"
+            >
+              <i class="fa-solid fa-rss"></i>
+              <span class="sr-only">RSS</span>
+            </LinkButton>
+          </li>
+          <li>
             {
               SITE.lightAndDarkMode && (
                 <button
