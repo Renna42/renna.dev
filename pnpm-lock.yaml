@@ -78,9 +78,6 @@ importers:
       '@fontsource-variable/noto-sans-sc':
         specifier: ^5.1.0
         version: 5.1.0
-      '@fontsource-variable/noto-serif-sc':
-        specifier: ^5.1.0
-        version: 5.1.0
       '@fortawesome/fontawesome-free':
         specifier: ^6.7.1
         version: 6.7.1
@@ -709,9 +706,6 @@ packages:
 
   '@fontsource-variable/noto-sans-sc@5.1.0':
     resolution: {integrity: sha512-PnnGFWTVyoSdiZU/QvH3w8NroJkBazLWEzrrfqdGX/S6txq6iDoNMG+bolTsAQ4dXbdvfKBTyX6kw/xg5bmdcg==}
-
-  '@fontsource-variable/noto-serif-sc@5.1.0':
-    resolution: {integrity: sha512-C/8NjFRJ9L8I2kEJ4PDI38HF9ih12EeUlIgE1W9PmTCEqhbovGDjYU9kCR+4r7YvuO62Bt8ysLxKgP2cswORzQ==}
 
   '@fortawesome/fontawesome-free@6.7.1':
     resolution: {integrity: sha512-ALIk/MOh5gYe1TG/ieS5mVUsk7VUIJTJKPMK9rFFqOgfp0Q3d5QiBXbcOMwUvs37fyZVCz46YjOE6IFeOAXCHA==}
@@ -4731,8 +4725,6 @@ snapshots:
   '@fontsource-variable/jetbrains-mono@5.1.1': {}
 
   '@fontsource-variable/noto-sans-sc@5.1.0': {}
-
-  '@fontsource-variable/noto-serif-sc@5.1.0': {}
 
   '@fortawesome/fontawesome-free@6.7.1': {}
 
