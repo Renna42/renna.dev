@@ -1,10 +1,10 @@
 import type { Site, SocialObject, FriendObject } from "./types";
 
 export const SITE: Site = {
-  website: "https://blog.izumino.cat/", // replace this with your deployed domain
-  author: "泉野咲",
-  desc: "这里是泉野",
-  title: "Izumino's Blog",
+  website: "https://renna.dev/", // replace this with your deployed domain
+  author: "Renna",
+  desc: "Renna's blog",
+  title: "Renna's blog",
   lightAndDarkMode: true,
   postPerPage: 5,
 };
@@ -16,13 +16,8 @@ export const LOCALE = {
 
 export const SOCIALS: SocialObject[] = [
   {
-    icon: "fa-brands fa-twitter",
-    href: "https://twitter.com/HMur233",
-    linkTitle: "Twitter",
-  },
-  {
     icon: "fa-brands fa-github",
-    href: "https://github.com/HuajiMUR233",
+    href: "https://github.com/Renna42",
     linkTitle: "GitHub",
   },
   {

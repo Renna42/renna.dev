@@ -7,9 +7,6 @@ import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
-import Hr from "@components/Hr.astro";
-
-const currentYear = new Date().getFullYear();
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -25,7 +22,6 @@ const {
   pubDatetime,
   modDatetime,
   tags,
-  license,
 } = post.data;
 
 const { Content } = await post.render();
@@ -68,21 +64,6 @@ const layoutProps = {
     <ul class="my-8">
       {tags.map(tag => <Tag tag={slugifyStr(tag)} />)}
     </ul>
-
-    <Hr />
-    <br />
-
-    <div class="text-center text-sm font-serif">
-      &copy; {
-        pubDatetime.getFullYear() == currentYear
-          ? currentYear
-          : pubDatetime.getFullYear() + "-" + currentYear
-      } 泉野咲 {
-        license != "ARR"
-          ? "本文采用 " + license + " 许可证进行许可"
-          : "保留所有权利"
-      }
-    </div>
   </main>
   <Footer />
 </Layout>
