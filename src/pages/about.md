@@ -25,7 +25,7 @@ title: "关于"
 
 ## 本站
 
-这个站点是用 [Astro](https://astro.build) 构建的, 部署在 [Cloudflare Pages](https://pages.cloudflare.com) 上
+这个站点是用 [Astro](https://astro.build) 构建的, ~~曾经部署在 [Cloudflare Pages](https://pages.cloudflare.com) 上~~, 现时由 [Vercel](https://vercel.com) 强力驱动 :-)
 
 使用了经过修改的 [AstroPager](https://github.com/satnaing/astro-paper) 主题
 
