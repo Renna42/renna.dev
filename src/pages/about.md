@@ -39,4 +39,4 @@ title: "关于"
 
 - 爱发电 (WeChat / Alipay):
 
-  <https://afdian.com/a/IzuminoSaki>
+  <https://afdian.com/a/Renna42>
