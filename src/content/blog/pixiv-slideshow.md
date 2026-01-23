@@ -3,6 +3,7 @@ title: Pixiv 的随机背景
 pubDatetime: 2024-12-14T02:12:50+08:00
 slug: pixiv-slideshow
 description: 对 Pixiv 未登录页面的背景幻灯片的分析
+tags: [dev]
 ---
 
 在桌面端的 Pixiv 上, 未登录时页面背景会有一个循环播放的幻灯片, 但是从 DevTools 中查看是看不到有一个专门的用于获取这些图片数据的接口

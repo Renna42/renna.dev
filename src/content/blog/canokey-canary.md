@@ -3,6 +3,7 @@ title: CanoKey Canary 上手体验
 pubDatetime: 2025-01-28T23:55:43+08:00
 slug: canokey-canary
 description: 139 元, 要啥自行车
+tags: [try]
 ---
 
 其实去年就已经买了这个 CanoKey Canary 了, 但一直不知道咋用好就丢在旁边闲置了许久
