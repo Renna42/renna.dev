@@ -4,6 +4,7 @@ pubDatetime: 2025-03-16T02:26:53+08:00
 modDatetime: 2025-03-21T03:12:50
 slug: guangzhou-ham-rec
 description: 简单记录一下自己申请无线电台执照的过程
+tags: [ham]
 ---
 
 **注意: 本文大部分内容的前提是你处在广东省广州市, 部分内容可能对于你所在的地区不可用**
