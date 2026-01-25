@@ -30,7 +30,7 @@ export const FRIENDS: FriendObject[] = [
   {
     name: "/mnt/anyneko",
     description: "待到重逢之时，我们一定要无话不谈",
-    link: "https://aneko.moe"
+    link: "https://aneko.moe",
   },
   {
     name: "雨山秋",
@@ -46,6 +46,11 @@ export const FRIENDS: FriendObject[] = [
     name: "MBRjun-Blog",
     description: "我们生活在大地上，但我们的梦想超越天空",
     link: "https://www.mbrjun.cn/",
+  },
+  {
+    name: "雨宮 澪音",
+    description: "Seeking for my true self.",
+    link: "https://amamiyamion.github.io/",
   },
 ];
 
