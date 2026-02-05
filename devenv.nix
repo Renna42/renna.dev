@@ -1,11 +1,12 @@
 {
   pkgs,
-  lib,
   config,
-  inputs,
   ...
 }: {
-  env.GREET = "devenv";
+  env = {
+    GREET = "devenv";
+    ASTRO_TELEMETRY_DISABLED = true;
+  };
 
   packages = with pkgs; [
     git
