@@ -24,6 +24,11 @@ export const SOCIALS: SocialObject[] = [
     href: "mailto:is@renna.dev",
     linkTitle: "E-Mail",
   },
+  {
+    icon: "fa-regular fa-telegram",
+    href: "https://t.me/renna_z",
+    linkTitle: "Telegram",
+  },
 ];
 
 export const FRIENDS: FriendObject[] = [
