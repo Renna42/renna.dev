@@ -25,7 +25,7 @@ export const SOCIALS: SocialObject[] = [
     linkTitle: "E-Mail",
   },
   {
-    icon: "fa-regular fa-telegram",
+    icon: "fa-brands fa-telegram",
     href: "https://t.me/renna_z",
     linkTitle: "Telegram",
   },
@@ -61,6 +61,11 @@ export const FRIENDS: FriendObject[] = [
     name: "chihuo2104の部落格",
     description: "一个不喜欢随波逐流的高中生的blog",
     link: "https://blog.chihuo2104.dev/",
+  },
+  {
+    name: "風雪城",
+    description: "浩繁星空下的一场稚嫩的梦",
+    link: "https://blog.chyk.ink/",
   },
 ];
 
