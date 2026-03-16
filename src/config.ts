@@ -57,6 +57,11 @@ export const FRIENDS: FriendObject[] = [
     description: "Seeking for my true self.",
     link: "https://amamiyamion.github.io/",
   },
+  {
+    name: "chihuo2104の部落格",
+    description: "一个不喜欢随波逐流的高中生的blog",
+    link: "https://blog.chihuo2104.dev/",
+  },
 ];
 
 export const GRAY_MODE: boolean = false;
