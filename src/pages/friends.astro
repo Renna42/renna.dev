@@ -5,6 +5,7 @@ import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Layout from "@layouts/Layout.astro";
 import Friend from "@components/Friend.astro";
+import Hr from "@components/Hr.astro";
 ---
 
 <Layout title={`友情链接 - ${SITE.title}`}>
@@ -16,6 +17,17 @@ import Friend from "@components/Friend.astro";
       {
         FRIENDS.map(friend => <Friend friend={friend} />)
       }
+      <Hr noPadding/>
+      <h2>友链信息</h2>
+      <p>
+        本站链接: <a>{SITE.website}</a>
+      </p>
+      <p>
+        简介: 无人知晓的日常记事本
+      </p>
+      <p>
+        你可以通过邮件、即时通讯软件亦或是直接发 PR 到<a href="https://github.com/Renna42/renna.dev">代码库</a>之类的你认为方便的方式和我联系
+      </p>
     </section>
   </main>
   <Footer />
