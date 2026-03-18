@@ -1,6 +1,7 @@
 ---
 title: Meta Quest 3 激活流程
 pubDatetime: 2026-03-07T10:00:00+08:00
+modDatetime: 2026-03-19T06:46:47+08:00
 slug: quest-activating
 description: 激活 Meta Quest 的方法
 tag: [try, vr]
@@ -18,7 +19,7 @@ tag: [try, vr]
 
 可以用一张国外流量卡开热点给 Quest
 
-如果你的设备支持 esim 的话，最近 Maya Mobile 在做一个活动可以免费领取 15GB 7d 的免费漫游 esim 卡，刚好满足激活 + 更新，国内是联通的 NSA 漫游
+有 ESIM 支持的话，直接下载一些免费漫游的流量卡完成激活更简单，没有的话也有一些香港的 SIM 卡比较好买到
 
 ## Windows 电脑热点
 
