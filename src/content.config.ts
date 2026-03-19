@@ -1,8 +1,10 @@
 import { SITE } from "@config";
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
+import { z } from "astro/zod";
 
 const blog = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/blog" }),
   schema: () =>
     z.object({
       author: z.string().default(SITE.author),
@@ -13,7 +15,6 @@ const blog = defineCollection({
       tags: z.array(z.string()).default(["others"]),
       description: z.string(),
       canonicalURL: z.string().optional(),
-      license: z.string().default("ARR"),
     }),
 });
 

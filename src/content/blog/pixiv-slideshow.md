@@ -1,7 +1,6 @@
 ---
 title: Pixiv 的随机背景
 pubDatetime: 2024-12-14T02:12:50+08:00
-slug: pixiv-slideshow
 description: 对 Pixiv 未登录页面的背景幻灯片的分析
 tags: [dev]
 ---

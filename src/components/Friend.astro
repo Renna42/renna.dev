@@ -1,5 +1,5 @@
 ---
-import type { FriendObject } from "types";
+import type { FriendObject } from "../types";
 
 export interface Props {
   friend: FriendObject;
@@ -7,8 +7,9 @@ export interface Props {
 
 const { friend } = Astro.props;
 ---
+
 <div>
-  <h3><a href={friend.link}>{friend.name}</a></h2>
+  <h3><a href={friend.link}>{friend.name}</a></h3>
   <p>
     {friend.description}
   </p>

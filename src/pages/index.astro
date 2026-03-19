@@ -20,10 +20,10 @@ const sortedPosts = getSortedPosts(posts);
       <ul>
         {
           sortedPosts.map(
-            ({ data, slug }, index) =>
+            ({ data, id }, index) =>
               index < 4 && (
                 <Card
-                  href={`/posts/${slug}`}
+                  href={`/posts/${id}`}
                   frontmatter={data}
                   secHeading={false}
                 />

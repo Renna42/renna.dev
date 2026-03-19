@@ -2,7 +2,6 @@
 title: Meta Quest 3 激活流程
 pubDatetime: 2026-03-07T10:00:00+08:00
 modDatetime: 2026-03-19T06:46:47+08:00
-slug: quest-activating
 description: 激活 Meta Quest 的方法
 tag: [try, vr]
 ---

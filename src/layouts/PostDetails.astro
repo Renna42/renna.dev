@@ -1,5 +1,6 @@
 ---
 import { SITE } from "@config";
+import { render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
@@ -24,7 +25,7 @@ const {
   tags,
 } = post.data;
 
-const { Content } = await post.render();
+const { Content } = await render(post);
 
 const layoutProps = {
   author,

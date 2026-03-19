@@ -1,7 +1,6 @@
 ---
 title: 记一次罗技鼠标个人送保
 pubDatetime: 2026-01-12T00:30:23+08:00
-slug: logitech-mouse-aftersales
 description: 没有平台售后应该怎么在国内送修罗技设备
 tag: [try]
 ---

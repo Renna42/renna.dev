@@ -23,6 +23,7 @@ export default [{
         "**/.yarn",
         "**/.jampack",
         "**/.astro",
+        "**/.vercel",
     ],
 }, ...compat.extends("eslint:recommended", "plugin:astro/recommended"), {
     languageOptions: {

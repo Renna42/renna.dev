@@ -2,7 +2,6 @@
 title: 广州未成年HAM执照申请记录
 pubDatetime: 2025-03-16T02:26:53+08:00
 modDatetime: 2025-03-21T03:12:50
-slug: guangzhou-ham-rec
 description: 简单记录一下自己申请无线电台执照的过程
 tags: [ham]
 ---

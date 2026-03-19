@@ -1,7 +1,6 @@
 ---
 title: MacBook 三进宫
 pubDatetime: 2026-01-23T12:56:13+08:00
-slug: three-times-macbook
 description: 我使用 MacBook 的历程
 tag: [try]
 ---

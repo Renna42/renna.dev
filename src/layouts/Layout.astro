@@ -86,7 +86,9 @@ const {
       function reflectPreference() {
         document.firstElementChild.setAttribute("data-theme", themeValue);
 
-        document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
+        document
+          .querySelector("#theme-btn")
+          ?.setAttribute("aria-label", themeValue);
 
         // Get a reference to the body element
         const body = document.body;
@@ -115,10 +117,12 @@ const {
           reflectPreference();
 
           // now this script can find and listen for clicks on the control
-          document.querySelector("#theme-btn")?.addEventListener("click", () => {
-            themeValue = themeValue === "light" ? "dark" : "light";
-            setPreference();
-          });
+          document
+            .querySelector("#theme-btn")
+            ?.addEventListener("click", () => {
+              themeValue = themeValue === "light" ? "dark" : "light";
+              setPreference();
+            });
         }
 
         setThemeFeature();
@@ -134,16 +138,19 @@ const {
           themeValue = isDark ? "dark" : "light";
           setPreference();
         });
-
     </script>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+SC:wght@100..900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+SC:wght@100..900&display=swap");
     </style>
   </head>
   <body>
     <slot />
     <!-- Cloudflare Web Analytics -->
-    <script is:inline defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c1365c25a42e4a3781de0ef21d983c45"}'></script>
+    <script
+      is:inline
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "c1365c25a42e4a3781de0ef21d983c45"}'></script>
     <!-- End Cloudflare Web Analytics -->
   </body>
 </html>

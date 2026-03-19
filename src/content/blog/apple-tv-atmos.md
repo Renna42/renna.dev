@@ -2,7 +2,6 @@
 title: Apple TV 输出杜比全景声
 pubDatetime: 2026-03-16T22:11:55+08:00
 modDatetime: 2026-03-19T06:17:33+08:00
-slug: apple-tv-atmos
 description: Apple TV 播放 Dolby Atmos 的坑
 tags: [try, apple-tv]
 ---

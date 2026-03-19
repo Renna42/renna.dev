@@ -1,7 +1,6 @@
 ---
 title: FVM 配置使用镜像
 pubDatetime: 2025-02-24T09:53:38+08:00
-slug: fvm-use-mirror
 description: 为 FVM 配置 Flutter SDK 镜像
 tags: [dev, flutter, dart]
 ---
