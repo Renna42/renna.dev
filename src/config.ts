@@ -4,6 +4,7 @@ export const SITE: Site = {
   website: "https://renna.dev/", // replace this with your deployed domain
   author: "Renna Zhou",
   title: "Renna's Blog",
+  description: "无人知晓的日常记事本",
   lightAndDarkMode: true,
   postPerPage: 5,
 };

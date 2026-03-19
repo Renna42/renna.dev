@@ -19,6 +19,7 @@ export interface Props {
 
 const {
   title = SITE.title,
+  description = SITE.description,
   author = SITE.author,
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
   scrollSmooth = false,
@@ -34,6 +35,7 @@ const {
     <meta charset="UTF-8" />
     <SEO
       title={title}
+      description={description}
       canonical={canonicalURL}
       extend={{
         link: [

@@ -2,6 +2,7 @@ export type Site = {
   website: string;
   author: string;
   title: string;
+  description: string;
   lightAndDarkMode: boolean;
   postPerPage: number;
 };
