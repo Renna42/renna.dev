@@ -11,13 +11,13 @@ title: "关于"
 
 这里是 Renna (a.k.a. 泉野咲)，不过你也可以用其他你认为习惯的称呼
 
-🇨🇳中文 🇺🇸English Read-write & 🇯🇵日本語 Learning
+🇨🇳中文 🇺🇸English R/W & 🇯🇵日本語 Learning
 
-用了 4 年 Linux, 现时主用 NixOS 和 macOS
+4 年 Linux 用户, 现时主用 NixOS 和 macOS
 
-主要搞后端相关的 infra, 前端会一点点
+现在是半个高中生, 日常出没在珠三角区域
 
-是一个前 AI 时代生命体, 古法编程推广者
+业余无线电呼号是 BG7LZL, 如有幸在空中相遇, 欢迎与我交换 QSL 卡片
 
 我的 PGP 公钥签名:
 
@@ -27,18 +27,12 @@ title: "关于"
 
 ## 本站
 
-这个站点是用 [Astro](https://astro.build) 构建的, ~~曾经部署在 [Cloudflare Pages](https://pages.cloudflare.com) 上~~, 现时由 [Vercel](https://vercel.com) 强力驱动 :-)
+### 技术栈
 
-使用了经过修改的 [AstroPager](https://github.com/satnaing/astro-paper) 主题
+使用了 [Astro](https://astro.build) + [Tailwind CSS](https://tailwindcss.com) 进行构建, 部署在 [Vercel](https://vercel.com) 上
+
+主题是经过修改的 [AstroPager](https://github.com/satnaing/astro-paper) 主题
 
 ### 许可
 
 在无特定声明的情况下，本站所有文章内容均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可
-
----
-
-## 投喂
-
-- 爱发电 (WeChat / Alipay):
-
-  <https://afdian.com/a/Renna42>
