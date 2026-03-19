@@ -62,11 +62,6 @@ export const FRIENDS: FriendObject[] = [
     description: "一个不喜欢随波逐流的高中生的blog",
     link: "https://blog.chihuo2104.dev/",
   },
-  {
-    name: "風雪城",
-    description: "浩繁星空下的一场稚嫩的梦",
-    link: "https://blog.chyk.ink/",
-  },
 ];
 
 export const GRAY_MODE: boolean = false;
