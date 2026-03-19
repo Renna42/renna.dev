@@ -19,11 +19,17 @@ title: "关于"
 
 业余无线电呼号是 BG7LZL, 如有幸在空中相遇, 欢迎与我交换 QSL 卡片
 
+### OpenPGP
+
 我的 PGP 公钥签名:
 
 ```text
 7E33 7F70 6F89 4D13 D8E6  B718 9676 3FAE 10AC 74FC
 ```
+
+你可以在[此处](/Renna42.gpg)直接下载我的公钥文件
+
+同时也支持通过 [Web Key Directory](https://datatracker.ietf.org/doc/draft-koch-openpgp-webkey-service/) 的方式获取我的公钥
 
 ## 本站
 
