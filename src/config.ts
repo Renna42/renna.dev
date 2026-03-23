@@ -34,6 +34,11 @@ export const SOCIALS: SocialObject[] = [
 
 export const FRIENDS: FriendObject[] = [
   {
+    name: "白雲小鎮",
+    description: "我們要好好活在今天",
+    link: "https://cloudowo.com/",
+  },
+  {
     name: "/mnt/anyneko",
     description: "待到重逢之时，我们一定要无话不谈",
     link: "https://aneko.moe",
