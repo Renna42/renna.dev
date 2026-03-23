@@ -80,6 +80,10 @@ const {
 
       let themeValue = getPreferTheme();
 
+      function getGiscusTheme() {
+        return themeValue === "dark" ? "dark_dimmed" : "light";
+      }
+
       function setPreference() {
         localStorage.setItem("theme", themeValue);
         reflectPreference();
@@ -108,6 +112,19 @@ const {
             .querySelector("meta[name='theme-color']")
             ?.setAttribute("content", bgColor);
         }
+
+        document.querySelectorAll("iframe.giscus-frame")?.forEach(frame => {
+          frame.contentWindow.postMessage(
+            {
+              giscus: {
+                setConfig: {
+                  theme: getGiscusTheme(),
+                },
+              },
+            },
+            "https://giscus.app"
+          );
+        });
       }
 
       // set early so no page flashes / CSS is made aware
@@ -140,6 +157,37 @@ const {
           themeValue = isDark ? "dark" : "light";
           setPreference();
         });
+    </script>
+    <script is:inline data-astro-rerun>
+      document.addEventListener(
+        "astro:page-load",
+        () => {
+          const element = document.createElement("script");
+          const config = {
+            src: "https://giscus.app/client.js",
+            "data-repo": "Renna42/renna.dev",
+            "data-repo-id": "R_kgDOLDdyMw",
+            "data-category": "Comments",
+            "data-category-id": "DIC_kwDOLDdyM84C5Ckw",
+            "data-mapping": "pathname",
+            "data-strict": "1",
+            "data-reactions-enabled": "1",
+            "data-emit-metadata": "0",
+            "data-input-position": "top",
+            // eslint-disable-next-line no-undef
+            "data-theme": getGiscusTheme(),
+            "data-lang": "zh-CN",
+            "data-loading": "lazy",
+            crossorigin: "anonymous",
+            async: true,
+          };
+          for (let key in config) {
+            element.setAttribute(key, config[key]);
+          }
+          document.getElementById("giscus-wrap")?.appendChild(element);
+        },
+        { once: true }
+      );
     </script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+SC:wght@100..900&display=swap");
