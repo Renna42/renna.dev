@@ -7,11 +7,11 @@ tags: [dev]
 
 在桌面端的 Pixiv 上, 未登录时页面背景会有一个循环播放的幻灯片, 但是从 DevTools 中查看是看不到有一个专门的用于获取这些图片数据的接口
 
-我们注意到，一个名为 bundle.js 的脚本文件的路径中包含着 `background-slideshow`
+我们注意到, 一个名为 bundle.js 的脚本文件的路径中包含着 `background-slideshow`
 
 这个脚本会从一个 id 为 `init-config` 的 元素中获取幻灯片信息
 
-但直接搜索的话是搜不到这个元素的，细看之后会发现这个脚本还会在加载完毕之后将 `init-config` 从 DOM 中移除出去
+但直接搜索的话是搜不到这个元素的, 细看之后会发现这个脚本还会在加载完毕之后将 `init-config` 从 DOM 中移除出去
 
 简单写一个脚本:
 

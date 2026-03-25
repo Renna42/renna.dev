@@ -9,7 +9,7 @@ title: "关于"
 
 <!-- https://www.pixiv.net/artworks/112850569 -->
 
-这里是 Renna (a.k.a. 泉野咲)，不过你也可以用其他你认为习惯的称呼
+这里是 Renna (a.k.a. 泉野咲), 不过你也可以用其他你认为习惯的称呼
 
 🇨🇳中文 🇺🇸English R/W & 🇯🇵日本語 Learning
 
@@ -39,6 +39,8 @@ title: "关于"
 
 主题是经过修改的 [AstroPager](https://github.com/satnaing/astro-paper) 主题
 
+_本站会始终追随最新的浏览器引擎兼容性, 因此在较旧版本的浏览器上可能出现部分排版问题_
+
 ### 许可
 
-在无特定声明的情况下，本站所有文章内容均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可
+在无特定声明的情况下, 本站所有文章内容均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可
