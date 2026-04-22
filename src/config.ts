@@ -73,6 +73,11 @@ export const FRIENDS: FriendObject[] = [
     description: "selfish saltfish.",
     link: "https://with.fish/",
   },
+  {
+    name: "残页的小博客",
+    description: "#Android",
+    link: "https://blog.canyie.top/",
+  },
 ];
 
 export const GRAY_MODE: boolean = false;
