@@ -1,4 +1,5 @@
 ---
+import { SITE } from "@config";
 import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
 
@@ -16,7 +17,7 @@ const { noMarginTop = false } = Astro.props;
   <div class="footer-wrapper">
     <Socials centered />
     <div class="copyright-wrapper">
-      &copy; {currentYear} Renna
+      &copy; {currentYear} {SITE.author}
     </div>
   </div>
 </footer>
