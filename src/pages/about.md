@@ -5,7 +5,7 @@ title: "关于"
 
 ## 我
 
-<img src="/assets/avatar.jpg" alt="Avatar" class="float-right rounded-full w-[400px]" style="zoom: 50%">
+<img src="/assets/avatar-fb.webp" alt="Avatar" class="float-right rounded-full w-36 sm:w-52">
 
 <!-- https://www.pixiv.net/artworks/112850569 -->
 
@@ -39,8 +39,8 @@ title: "关于"
 
 主题是经过修改的 [AstroPager](https://github.com/satnaing/astro-paper) 主题
 
-_本站会始终追随最新的浏览器引擎兼容性, 因此在较旧版本的浏览器上可能出现部分排版问题_
-
 ### 许可
 
 在无特定声明的情况下, 本站所有文章内容均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可
+
+人设图片由 [@TrypanBlue_TPB](https://x.com/TrypanBlue_TPB) 创作, 根据 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 进行许可
