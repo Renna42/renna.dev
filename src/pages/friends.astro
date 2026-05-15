@@ -18,11 +18,12 @@ import Hr from "@components/Hr.astro";
       <Hr noPadding />
       <h2>友链信息</h2>
       <p>
-        本站链接: <a>{SITE.website}</a>
+        本站链接: <a href={SITE.website}>{SITE.website}</a>
       </p>
       <p>站点名字: {SITE.title}</p>
       <p>简介: {SITE.description}</p>
       <p>站长: {SITE.author}</p>
+      <p>头像图片: <a href={SITE.website + "assets/avatar.jpeg"}>{SITE.website + "assets/avatar.jpeg"}</a></p>
       <p>
         你可以通过邮件、即时通讯软件亦或是直接发 PR 到<a
           href="https://github.com/Renna42/renna.dev">代码库</a
