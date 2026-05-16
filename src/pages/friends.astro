@@ -6,6 +6,8 @@ import Header from "@components/Header.astro";
 import Layout from "@layouts/Layout.astro";
 import Friend from "@components/Friend.astro";
 import Hr from "@components/Hr.astro";
+
+const avatarImg = SITE.website + "assets/avatar.jpg";
 ---
 
 <Layout title={`友情链接 - ${SITE.title}`}>
@@ -23,7 +25,7 @@ import Hr from "@components/Hr.astro";
       <p>站点名字: {SITE.title}</p>
       <p>简介: {SITE.description}</p>
       <p>站长: {SITE.author}</p>
-      <p>头像图片: <a href={SITE.website + "assets/avatar.jpeg"}>{SITE.website + "assets/avatar.jpeg"}</a></p>
+      <p>头像图片: <a href={avatarImg}>{avatarImg}</a></p>
       <p>
         你可以通过邮件、即时通讯软件亦或是直接发 PR 到<a
           href="https://github.com/Renna42/renna.dev">代码库</a
