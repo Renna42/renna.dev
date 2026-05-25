@@ -13,7 +13,7 @@ export interface Props {
 export async function getStaticPaths() {
   const posts = await getCollection(
     "blog",
-    ({ data }) => !data.draft || process.env.NODE_ENV === "development"
+    ({ data }) => !data.hidden || process.env.NODE_ENV === "development"
   );
 
   const postResult = posts.map(post => ({

@@ -7,7 +7,7 @@ interface Tag {
 }
 
 const getUniqueTags = (posts: CollectionEntry<"blog">[]) => {
-  const filteredPosts = posts.filter(({ data }) => !data.draft);
+  const filteredPosts = posts.filter(({ data }) => !data.hidden);
   const tags: Tag[] = filteredPosts
     .flatMap(post => post.data.tags)
     .map(tag => ({ tag: slugifyStr(tag), tagName: tag }))
